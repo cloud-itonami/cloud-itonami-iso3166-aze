@@ -1,0 +1,36 @@
+;; data/datascript-tx.edn — DataScript tx-data derived from src/statute/facts.cljc
+;; `statute.facts/catalog` (ADR-2607141700 Wave 0). Same "no :db/id per entity,
+;; DataScript auto-assigns" shape as etzhayyim/global-legislation-datoms.
+;; `:statute/topic` is serialized as a vector here (source-of-truth `catalog` in
+;; facts.cljc uses a set; this file is the derived, query-engine-facing form).
+
+[#:statute{:id "aze.civil-code"
+           :title "Azərbaycan Respublikasının Mülki Məcəlləsi (Civil Code of the Republic of Azerbaijan)"
+           :jurisdiction "AZE"
+           :kind :law
+           :law-number "Mülki Məcəllə, qəbul 28.12.1999, qüvvəyə minmə 01.09.2000 (1964-cü il Mülki Məcəlləsini əvəz edir)"
+           :url "https://www.cbar.az/law-169/civil-code-of-the-republic-of-aerbaijan"
+           :url-provenance :official-central-bank-hosted-code
+           :enacted-date "2000-09-01"
+           :retrieved-at "2026-07-21"
+           :topic [:corporate-governance :incorporation]}
+ #:statute{:id "aze.labour-code"
+           :title "Azərbaycan Respublikasının Əmək Məcəlləsi (Labour Code of the Republic of Azerbaijan)"
+           :jurisdiction "AZE"
+           :kind :law
+           :law-number "Əmək Məcəlləsi, № 618-IQ, 01.02.1999"
+           :url "https://frameworks.e-qanun.az/46/f_46943.html"
+           :url-provenance :official-e-qanun
+           :enacted-date "1999-02-01"
+           :retrieved-at "2026-07-21"
+           :topic [:labor :employment]}
+ #:statute{:id "aze.personal-data-law"
+           :title "\"Fərdi məlumatlar haqqında\" Azərbaycan Respublikasının Qanunu (Law of the Republic of Azerbaijan 'On Personal Data')"
+           :jurisdiction "AZE"
+           :kind :law
+           :law-number "№ 998-IIIQ, 11.05.2010"
+           :url "https://frameworks.e-qanun.az/19/f_19675.html"
+           :url-provenance :official-e-qanun
+           :enacted-date "2010-05-11"
+           :retrieved-at "2026-07-21"
+           :topic [:data-protection :privacy]}]
