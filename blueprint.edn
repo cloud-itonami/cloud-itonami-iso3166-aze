@@ -7,4 +7,7 @@
  :itonami.blueprint/governor :market-entry-compliance-governor
  :itonami.blueprint/robotics false
  :itonami.blueprint/required-technologies [:identity :forms :dmn :bpmn :audit-ledger]
- :itonami.blueprint/status :public-oss}
+ :itonami.blueprint/status :public-oss
+ :itonami.blueprint/maturity :implemented
+ :itonami.blueprint/implemented-slice
+ "Full Actors-pattern implementation: MarketEntry-LLM advisor (marketentry.marketentryllm) sealed behind an independent Market-Entry Compliance Governor (marketentry.governor, unreliable-supplier-listed flagship check -- independently recomputes etibarsız təchizatçılar reyestri (unreliable-supplier registry, Cabinet of Ministers Decision No. 492, 30.12.2023) membership rather than trusting a proposal's own self-report, plus spec-basis / evidence-incomplete / engagement-fee-mismatch / voen-unverified / already-drafted / already-submitted) driving a langgraph-clj StateGraph (marketentry.operation) over an append-only audit ledger; MemStore + langchain-store-backed DatomicStore (marketentry.store, built on io.github.kotoba-lang/langchain-store per ADR-2607141600, not a hand-rolled enc/dec* codec); marketentry.facts grounded in a verified Azerbaijan dossier (etender.gov.az Unified Internet Portal for State Procurement, Law No. 988-VIQ, VÖEN taxpayer ID via the State Tax Service); governor contract + store parity + registry + phase + facts tests all passing (clojure -M:dev:test); 0 clj-kondo errors (clojure -M:lint); CI (.github/workflows/ci.yml) reconstructs the kotoba-lang/langgraph+langchain+langchain-store sibling-checkout layout."}
