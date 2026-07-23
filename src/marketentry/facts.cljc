@@ -91,25 +91,7 @@
           :corporate-number-provenance "https://www.taxes.gov.az/en"
           :unreliable-supplier-owner-authority "Azərbaycan Respublikasının Prezidenti yanında Antiinhisar və İstehlak Bazarına Nəzarət Agentliyi (State Agency for Antimonopoly and Consumer Market Control)"
           :unreliable-supplier-legal-basis "Nazirlər Kabinetinin 30.12.2023 tarixli 492 nömrəli Qərarı ilə təsdiq edilmiş Qaydalar (Cabinet of Ministers Decision No. 492, 30.12.2023) + \"Dövlət satınalmaları haqqında\" Qanunu No. 988-VIQ -- maintains the etibarsız təchizatçılar reyestri (unreliable-supplier registry); registry membership bars further state-procurement participation"
-          :unreliable-supplier-provenance "https://competition.gov.az/az/page/haqqimizda/fealiyyet-istiqametleri/dovlet-satinalmalari"}
-   "USA" {:name "United States"
-          :owner-authority "U.S. General Services Administration (GSA) / SAM.gov"
-          :legal-basis "Federal Acquisition Regulation (FAR); System for Award Management"
-          :national-spec "SAM.gov entity registration + NAICS self-certification"
-          :provenance "https://sam.gov/"
-          :required-evidence ["EIN record"
-                              "SAM.gov registration record"
-                              "State business registration record"
-                              "Authorized-representative record"]}
-   "DEU" {:name "Germany"
-          :owner-authority "Beschaffungsamt des BMI / e-Vergabe platforms"
-          :legal-basis "Gesetz gegen Wettbewerbsbeschränkungen (GWB) / VgV"
-          :national-spec "e-Vergabe supplier registration under EU procurement directives"
-          :provenance "https://www.evergabe-online.de/"
-          :required-evidence ["Handelsregister extract"
-                              "e-Vergabe registration record"
-                              "USt-IdNr record"
-                              "Authorized-representative record"]}})
+          :unreliable-supplier-provenance "https://competition.gov.az/az/page/haqqimizda/fealiyyet-istiqametleri/dovlet-satinalmalari"}})
 
 (defn spec-basis
   "The jurisdiction's requirement map, or nil -- nil means NO spec-basis,
