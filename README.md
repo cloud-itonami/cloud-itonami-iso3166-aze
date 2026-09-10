@@ -51,7 +51,7 @@ department.
 | Governor | `:market-entry-compliance-governor` |
 | Ops | `:engagement/intake` · `:jurisdiction/assess` · `:filing/draft` · `:filing/submit` |
 | Flagship HARD check | `unreliable-supplier-listed` (etibarsız təchizatçılar reyestri membership, independently recomputed -- see `docs/adr/0001-architecture.md`) |
-| Compliance catalog | `src/statute/facts.cljc` -- Civil Code, Labour Code, Law on Personal Data |
+| Compliance catalog | `src/statute/facts.kotoba` -- Civil Code, Labour Code, Law on Personal Data |
 | Tests | `clojure -M:dev:test` (34 tests / 108 assertions, including the pre-existing culture-catalog suite) |
 | Demo | `clojure -M:dev:run` |
 | Architecture ADR | [`docs/adr/0001-architecture.md`](docs/adr/0001-architecture.md) |
@@ -122,7 +122,7 @@ Alongside the market-entry / statute catalogs, this repo carries a
 `com-junkawasaki/root`) -- national dishes, protected products, beverages,
 crafts, festivals and heritage sites for Azerbaijan:
 
-- `src/culture/facts.cljc` -- the catalog, source of truth (keyed by
+- `src/culture/facts.kotoba` -- the catalog, source of truth (keyed by
   uppercase ISO3, mirroring `statute.facts`).
 - `schema/culture.edn` -- DataScript schema.
 - `data/culture-tx.edn` -- derived DataScript tx-data (regenerated from
