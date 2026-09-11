@@ -52,8 +52,8 @@ department.
 | Ops | `:engagement/intake` · `:jurisdiction/assess` · `:filing/draft` · `:filing/submit` |
 | Flagship HARD check | `unreliable-supplier-listed` (etibarsız təchizatçılar reyestri membership, independently recomputed -- see `docs/adr/0001-architecture.md`) |
 | Compliance catalog | `src/statute/facts.kotoba` -- Civil Code, Labour Code, Law on Personal Data |
-| Tests | `clojure -M:dev:test` (34 tests / 108 assertions, including the pre-existing culture-catalog suite) |
-| Demo | `clojure -M:dev:run` |
+| Tests | `kbb -M:dev:test` (34 tests / 108 assertions, including the pre-existing culture-catalog suite) |
+| Demo | `kbb -M:dev:run` |
 | Architecture ADR | [`docs/adr/0001-architecture.md`](docs/adr/0001-architecture.md) |
 
 `:filing/submit` is never in any phase's `:auto` set -- human sign-off
